@@ -10,7 +10,6 @@ I wrote this code for a computer class. The code runs on Matlab and given a numb
 
 
 
-
                          ..zeeeeeee..                             
                     .zd$$$$$$$$$$$$$$$$be.                        
                  .e$$$$$$$$$$$$$$$$$$$$$$$$e.                     
@@ -36,5 +35,4 @@ I wrote this code for a computer class. The code runs on Matlab and given a numb
                 "$$$$$$$$$$$$$$$$$$$$$$$$$$$$"                    
                   "*$$$$$$$$$$$$$$$$$$$$$$*"                      
                      ^"*$$$$$$$$$$$$$$*""                         
-                            """"""                  
-                                                    
+                            """"""   
