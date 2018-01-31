@@ -11,35 +11,30 @@ I wrote this code for a computer class. The code runs on Matlab and given a numb
 
 
 
-
-                .
-              .MM
-             .MMMM                MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-             MM   M                 I     MZDDDM,    7DNDDMN     M8DDDM     ?     ZM8DD
-             M    M                 ?     MZD88M.    7DDDDMN     M88DDM     +     $M8D8
-            M7    M+                I     M$DDNM,    7DNDNMN     M8NNNM     =     $MODN
-            M    ?M?                I     M$MMMM.    7DNMMMN     MOMMMM     =     $MZMM
-            M    MM                 I     MOMMMM,    $DMMMMN     MMMMMM     =     7MNMM
-            M  MMMM                 I     MOMMMM,    $DMMMMN     MMMMMM     =     7MMMM
-            ~ MMMM                  I     MOMMMM.    $DMMMMN     MMMMMM     ~     $MNMM
-            MMMMM                   I     MOMMMM.    $DMMMMN     MMMMMM     ~     7MNMM
-          DMMMMM                    I     MZMMMM.    7DMMMMN     MMMMMM     ~     $MNMM
-        MMMMMM                      I     MZMMMM.    $DMMMMN     MMMMMM     :     7MNMM
-       8MMMM7 ?                     I     MOMMMM.    ZDMMMMN     MMMMMM     :     $MNMM
-      DMMMM   M                     I     MZMMMM.    O8MMMMN     MMMMMM     :     7MDMM
-     NMMM     $                     I     MD8DDM.    ZO88D8N    .MD8DOM     :     7MD8D
-    MMMM      M                     ?     MMMMMM     IMMMMMZ     MMMMMM     ,     ~MMMM
-    NMM    MMMMMMMMMM               ?         M         M         M         ,         7
-    MMM   MMM  M   MMM              ?         D         M         D         ,         ?
-    MM$   MD    =   MM              ?         8         N         D         ,         +
-    MMM   MM         MM             ?         8         N         8         .         +
-      M    $M   O   M~              ?         O         N         8         .         +
-       MM          M.               ?         O         N         8         .         =
-         :M:::=--M.                 ?         O         N         8         .         =
-                  M                 ?         Z         N         8         .         =
-                  :                 ?         Z         N         O         .         ~
-         MMMM     M                 ?         Z         N         O         .         ~
-        MMMMMM    M                 +         $         M         O         .         =
-        MMMMMM   ~,                OM.       ~M.       ,M        .M=        M7        M
-         MMM    M                 DDDDDNNNNNNNMNDNNNNNNNMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMM
-           7MO.
+                         ..zeeeeeee..                             
+                    .zd$$$$$$$$$$$$$$$$be.                        
+                 .e$$$$$$$$$$$$$$$$$$$$$$$$e.                     
+               .$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$c                   
+             .$$$$$$$$$$*"" $$$$$$ ""*$$$$$$$$$$.                 
+            z$$$$$$$$""     $$$$$$      "$$$$$$$$b                
+           d$$$$$$$"        $$$$$$        "$$$$$$$$               
+          d$$$$$$"          $$$$$$          "$$$$$$$              
+         d$$$$$$"           $$$$$$           ^$$$$$$b             
+        .$$$$$$F            $$$$$$            '$$$$$$r            
+        d$$$$$$             $$$$$$.            $$$$$$$            
+        $$$$$$F           .$$$$$$$$c           4$$$$$$            
+        $$$$$$F          e$$$$$$$$$$$.          $$$$$$            
+        $$$$$$F        .$$$$$$$$$$$$$$b        .$$$$$$            
+        $$$$$$b       e$$$$$$$$$$$$$$$$$c      4$$$$$$            
+        3$$$$$$     .$$$$$$P$$$$$$$$$$$$$b.    $$$$$$P            
+         $$$$$$b   d$$$$$$" $$$$$$ "$$$$$$$c  d$$$$$$"            
+         '$$$$$$b.$$$$$$P   $$$$$$  ^*$$$$$$bd$$$$$$F             
+          "$$$$$$$$$$$$"    $$$$$$    "$$$$$$$$$$$$P              
+           "$$$$$$$$$P      $$$$$$      *$$$$$$$$$"               
+            ^$$$$$$$$$e.    $$$$$$    .e$$$$$$$$$"                
+              "$$$$$$$$$$$ee$$$$$$ee$$$$$$$$$$$*                  
+                "$$$$$$$$$$$$$$$$$$$$$$$$$$$$"                    
+                  "*$$$$$$$$$$$$$$$$$$$$$$*"                      
+                     ^"*$$$$$$$$$$$$$$*""                         
+                            """"""                  
+                                                    
