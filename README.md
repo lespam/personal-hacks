@@ -6,7 +6,7 @@ Peace!
 
 ## Tarea.m
 
-I wrote this code for a computer class. The code runs on Matlab and given a number, a number of bits assigned to the mantissa, and the number of bits asigned to the exponent, using floating point arithmetic. If the numer can be represented, then it'll tell you how, and finally it'll show the Gray representation.
+I wrote this code for a computer class. The code runs on Matlab and given a number, using floating point arithmetic, if the numer can be represented, then it'll tell you how, and finally it'll show the Gray representation.
 
 
 
