@@ -8,31 +8,9 @@ Peace!
 
 I wrote this code for a computer class. The code runs on Matlab and given a number, using floating point arithmetic, if the numer can be represented, then it'll tell you how, and finally it'll show the Gray representation.
 
+Codigo de Powershell para convertir los archivos de DVD con formato .VOB a .MP4 mediante [FFmpeg](https://ffmpeg.org/documentation.html), un multimedia framework. \\
+Este código convierte recursivamente los archivos .VOB de la carpeta Videos. Los archivos entregados se encuentran en la misma ubicación de los archivos y con el mismo nombre a diferencia de la extension.
 
-
-                         ..zeeeeeee..                             
-                    .zd$$$$$$$$$$$$$$$$be.                        
-                 .e$$$$$$$$$$$$$$$$$$$$$$$$e.                     
-               .$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$c                   
-             .$$$$$$$$$$*"" $$$$$$ ""*$$$$$$$$$$.                 
-            z$$$$$$$$""     $$$$$$      "$$$$$$$$b                
-           d$$$$$$$"        $$$$$$        "$$$$$$$$               
-          d$$$$$$"          $$$$$$          "$$$$$$$              
-         d$$$$$$"           $$$$$$           ^$$$$$$b             
-        .$$$$$$F            $$$$$$            '$$$$$$r            
-        d$$$$$$             $$$$$$.            $$$$$$$            
-        $$$$$$F           .$$$$$$$$c           4$$$$$$            
-        $$$$$$F          e$$$$$$$$$$$.          $$$$$$            
-        $$$$$$F        .$$$$$$$$$$$$$$b        .$$$$$$            
-        $$$$$$b       e$$$$$$$$$$$$$$$$$c      4$$$$$$            
-        3$$$$$$     .$$$$$$P$$$$$$$$$$$$$b.    $$$$$$P            
-         $$$$$$b   d$$$$$$" $$$$$$ "$$$$$$$c  d$$$$$$"            
-         '$$$$$$b.$$$$$$P   $$$$$$  ^*$$$$$$bd$$$$$$F             
-          "$$$$$$$$$$$$"    $$$$$$    "$$$$$$$$$$$$P              
-           "$$$$$$$$$P      $$$$$$      *$$$$$$$$$"               
-            ^$$$$$$$$$e.    $$$$$$    .e$$$$$$$$$"                
-              "$$$$$$$$$$$ee$$$$$$ee$$$$$$$$$$$*                  
-                "$$$$$$$$$$$$$$$$$$$$$$$$$$$$"                    
-                  "*$$$$$$$$$$$$$$$$$$$$$$*"                      
-                     ^"*$$$$$$$$$$$$$$*""                         
-                            """"""   
+'''
+ls -Recurse '.\Videos' | Where { $_.Extension -eq ".VOB" } | ForEach { .\ffmpeg -i $_.FullName $_.FullName.Replace(".VOB", ".mp4") }
+'''
