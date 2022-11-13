@@ -16,5 +16,5 @@ ls -Recurse '.\Videos' | Where { $_.Extension -eq ".VOB" } | ForEach { .\ffmpeg 
 
 ## Floating point arithmetic representation in MatLab
 
-[](Tarea.m)
+[Tarea.m](Tarea.m)
 I wrote this code for a computer class. The code runs on Matlab and given a number, using floating point arithmetic, if the numer can be represented, then it'll tell you how, and finally it'll show the Gray representation.
