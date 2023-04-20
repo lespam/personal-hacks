@@ -30,4 +30,34 @@ Open the Hardware and Devices Troublshooter on Windows 11
 msdt.exe -id DeviceDiagnostic
 `
 
+Find out which process is using the folder using PowerShell
+---
+```
+# Get all processes
+$processes = Get-Process
+
+# Loop through each process
+foreach ($process in $processes) {
+  # Try to get the path of the executable
+  try {
+    $path = $process.Path
+  }
+  catch {
+    # Ignore any errors
+    continue
+  }
+
+  # Check if the path contains the folder name
+  if ($path -like "*Music*") {
+    # Write the process name and path
+    Write-Host "$($process.Name) - $path"
+  }
+}
+```
+
+This will output something like:
+```
+Spotify - C:\Users\lesli\AppData\Roaming\Spotify\Spotify.exe
+iTunes - C:\Program Files\iTunes\iTunes.exe
+```
 
