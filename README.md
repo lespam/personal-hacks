@@ -61,3 +61,15 @@ Spotify - C:\Users\lesli\AppData\Roaming\Spotify\Spotify.exe
 iTunes - C:\Program Files\iTunes\iTunes.exe
 ```
 
+Borra las carpetas vacias recursivamente en PowerShell
+---
+
+```
+do{
+    $folders = Get-ChildItem -Path Get-Location -Recurse -Directory | Where-Object { $_.GetFileSystemInfos().Count -eq 0 }
+    foreach ($folder in $folders) {
+        Remove-Item $folder.FullName -Recurse -Force
+	}
+    $folders = Get-ChildItem -Path Get-Location -Recurse -Directory | Where-Object { $_.GetFileSystemInfos().Count -eq 0 }
+} while ($folders.Count -ne 0)
+```
