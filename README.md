@@ -1,10 +1,10 @@
-# Compilación de shortcodes y hacks personales
+# Shortcodes y hacks personales
 
 En este repositorio estoy juntando los pedazos de codigo que utilizo en mi día a día y en mis proyectos personales. Puede ser código que usé una vez para un caso especifico pero quisiewra resguardar y compartir las soluciones que encuentre. El codigo es de distintos programas y lenguajes, puede ser una configuracion de regex en powershell o un archivo con un programa matemático de Matlab.
 
 Peace out!
 
-Convierte DVD a MP4
+Convierte DVD a MP4 usando FFmpeg
 ---
 Codigo de Powershell para convertir los archivos de DVD con formato .VOB a .MP4 mediante [FFmpeg](https://ffmpeg.org/documentation.html), un multimedia framework.
 
@@ -68,3 +68,37 @@ Borra las carpetas vacias recursivamente en PowerShell
 Get-ChildItem -Path $(Get-Location) -Recurse -Directory | Where-Object { $_.GetFileSystemInfos().Count -eq 0 } | Remove-Item -WhatIf -Force
 ```
 Si estas seguro que quieres borrar, elimina el `-WhatIf`.
+
+Borra los archivos ocultos que comienzan con un punto en PowerShell
+---
+1. Revisar archivos a eliminar
+```
+Get-ChildItem -Recurse -Force | Where-Object { $_.Name -match "^\." }
+```
+El resultado es algo como
+```
+  Directory: C:\Users\L\Documentos\THE BEST HITS OF THE 70s\Covers
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a-h--        12/13/2013  10:06 PM           4096 ._VA - The Best Hits of 70'_Back.jpg
+-a-h--        12/13/2013  10:06 PM           4096 ._VA - The Best Hits of 70'_CD.jpg
+-a-h--        12/13/2013  10:06 PM           4096 ._VA - The Best Hits of 70'_Front.jpg
+```
+
+2. Eliminar
+```
+Get-ChildItem -Recurse -Force | Where-Object { $_.Name -match "^\." } | Remove-Item -Force
+Get-ChildItem -Recurse -Force | Where-Object { $_.Name -match "*.db" } | Remove-Item -Force
+```
+
+Borra los folders vacíos en PowerShell
+---
+1. Ver folders a borrar
+```
+Get-ChildItem -Recurse -Path $srcPath -Directory | Where-Object { (Get-ChildItem $_.FullName -Force).Count -eq 0 }
+```
+2. Borrar
+```
+Get-ChildItem -Recurse -Path $srcPath -Directory | Where-Object { (Get-ChildItem $_.FullName -Force).Count -eq 0 } | Remove-Item -Force
+```
